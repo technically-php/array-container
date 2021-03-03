@@ -1,8 +1,8 @@
-![Status](https://github.com/technically-php/array-container/actions/workflows/test.yml/badge.svg)
+![Tests Status][badge]
 
-# ArrayContainer
+# Technically Array Container
 
-`ArrayContainer` is a plain-simple [PSR-11](https://www.php-fig.org/psr/psr-11/) container implementation 
+`Technically\ArrayContainer` is a plain-simple [PSR-11][1] container implementation 
 powered by a simple associative array under the hood.
 
 ## Features
@@ -15,7 +15,7 @@ powered by a simple associative array under the hood.
 
 ## Installation
 
-Use [Composer](https://getcomposer.org/) package manager to add *ArrayContainer* to your project:
+Use [Composer][2] package manager to add *ArrayContainer* to your project:
 
 ```
 composer require technically/array-container
@@ -45,4 +45,10 @@ $logger = $container->get('logger');
 
 ## Credits
 
-- Implemented by [Ivan Voskoboinyk](https://github.com/e1himself)
+- Implemented by [Ivan Voskoboinyk][3]
+
+
+[1]: https://www.php-fig.org/psr/psr-11/
+[2]: https://getcomposer.org/
+[3]: https://github.com/e1himself
+[badge]: https://github.com/technically-php/array-container/actions/workflows/test.yml/badge.svg
