@@ -45,7 +45,7 @@ $logger = $container->get('logger');
 
 ## Changelog
 
-All notable changes to this project will be documented in the [CHANGELOG][./CHANGELOG.md] file.
+All notable changes to this project will be documented in the [CHANGELOG](./CHANGELOG.md) file.
 
 
 ## Credits
