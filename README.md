@@ -43,6 +43,11 @@ $container->set('config', $config);
 $logger = $container->get('logger');
 ```
 
+## Changelog
+
+All notable changes to this project will be documented in the [CHANGELOG][./CHANGELOG.md] file.
+
+
 ## Credits
 
 - Implemented by [Ivan Voskoboinyk][3]
