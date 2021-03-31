@@ -7,13 +7,10 @@ use Technically\ArrayContainer\Exceptions\ServiceNotFound;
 
 final class ArrayContainer implements ContainerInterface
 {
-    /**
-     * @var mixed[]
-     */
-    private $services;
+    private array $services;
 
     /**
-     * @param mixed[] $services
+     * @param array<string,mixed> $services
      */
     public function __construct(array $services = [])
     {
@@ -31,7 +28,7 @@ final class ArrayContainer implements ContainerInterface
      *
      * @return bool
      */
-    public function has($id)
+    public function has(string $id): bool
     {
         return array_key_exists($id, $this->services);
     }
@@ -45,7 +42,7 @@ final class ArrayContainer implements ContainerInterface
      *
      * @return mixed Entry.
      */
-    public function get($id)
+    public function get(string $id): mixed
     {
         if (array_key_exists($id, $this->services)) {
             return $this->services[$id];
@@ -62,7 +59,7 @@ final class ArrayContainer implements ContainerInterface
      *
      * @return void
      */
-    public function set($id, $entry)
+    public function set(string $id, mixed $entry): void
     {
         $this->services[$id] = $entry;
     }
@@ -70,7 +67,7 @@ final class ArrayContainer implements ContainerInterface
     /**
      * Return an associative array of all container entries.
      *
-     * @return mixed[]
+     * @return array<string,mixed>
      */
     public function toArray(): array
     {
