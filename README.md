@@ -1,9 +1,10 @@
-![Tests Status][badge]
-
 # Technically Array Container
 
 `Technically\ArrayContainer` is a plain-simple [PSR-11][1] container implementation 
 powered by a simple associative array under the hood.
+
+![Tests Status][badge]
+
 
 ## Features
 
@@ -13,6 +14,7 @@ powered by a simple associative array under the hood.
 - Semver
 - Tests
 
+
 ## Installation
 
 Use [Composer][2] package manager to add *ArrayContainer* to your project:
@@ -20,6 +22,7 @@ Use [Composer][2] package manager to add *ArrayContainer* to your project:
 ```
 composer require technically/array-container
 ```
+
 
 ## Example
 
@@ -42,6 +45,7 @@ $container->set('config', $config);
 // Get entries from it later in your code
 $logger = $container->get('logger');
 ```
+
 
 ## Changelog
 
