@@ -9,8 +9,7 @@ powered by a simple associative array under the hood.
 ## Features
 
 - PSR-11
-- PHP 7.1+
-- PHP 8.0
+- PHP 8.0+
 - Semver
 - Tests
 
